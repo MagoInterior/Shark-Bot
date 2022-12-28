@@ -20,7 +20,7 @@ await conn.sendHydrated(m.chat, shark, wm, null, md, '𝐒𝐡𝐚𝐫𝐤-𝐁�
 ], m,)
     
   } else //conn.reply(m.chat, `❎ Lo siento, no tienes suficientes *XP* para comprar *${count}* Diamantes💎`, m)
-  await conn.sendHydrated(m.chat, `*No tiene sufuciente 𝙓𝙋 para comprar ${count} Diamantes* 💎\n\n*Le recomiendo que interactúe con el Shark-Bot para Obtener experiencia, puede ver su experiencia con el comando ${usedPrefix}exp o ${usedPrefix}experiencia. También puede comprar con GataCoins con el Comando ${usedPrefix}buy2*`, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
+  await conn.sendHydrated(m.chat, `*No tiene sufuciente 𝙓𝙋 para comprar ${count} Diamantes* 💎\n\n*Le recomiendo que interactúe con el Shark-Bot para Obtener experiencia, puede ver su experiencia con el comando ${usedPrefix}exp o ${usedPrefix}experiencia. También puede comprar con SharkCoins con el Comando ${usedPrefix}buy2*`, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
 ['🦈 𝘾𝙤𝙢𝙥𝙧𝙖𝙧 𝙘𝙤𝙣 𝙎𝙃𝘼𝙍𝙆𝘾𝙊𝙄𝙉𝙎', '/buy2'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
 ], m,)
