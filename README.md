@@ -88,7 +88,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 - Panel: [`https://panel.boxmineworld.com`](https://panel.boxmineworld.com)
 
 ------------------
-### ACTIVAR POR TERMUX - GITHUB <a href="https://github.com/GataNina-Li/GataBot-MD"> <img src="https://icones.pro/wp-content/uploads/2021/06/icone-github-violet.png" height="40px"> </a>
+### ACTIVAR POR TERMUX - GITHUB <a href="https://github.com/GyutaroNc/Shark-Bot"> <img src="https://icones.pro/wp-content/uploads/2021/06/icone-github-violet.png" height="40px"> </a>
 #### ⬇️ AGREGAR CADA COMANDO POR TEXMUX (Opción 1):
 > ❇️ YA PUEDE INSTALAR DIRECTAMENTE DESDE TERMUX USANDO ESTE REPOSITORIO!!
 ```bash
@@ -107,7 +107,7 @@ npm start
 ------------------
 ### ACTIVAR POR TERMUX - ARCHIVOS <a href="https://github.com/GyutaroNc/Shark-Bot"> <img src="https://images.vexels.com/media/users/3/135984/isolated/preview/11c3e3e5d2a2c47fef7926854010d767-icono-de-carpeta-de-archivos.png" height="40px"> </a>
 > DESCARGUÉ Y DESCOMPRIMA 
-### [`Shark-Bot ~ Archivos`](https://mega.nz/file/vvxxHYha#-I6Q64hayupW4_mQ86KWXt0qzy7tAg4sUxAaAKmMahk)
+### [`Shark-Bot ~ Archivos`](https://www.mediafire.com/file/z10cv2yxmei8z2j/Shark.zip/file)
 
 #### ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO (Opción 2):
 ```bash
