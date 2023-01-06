@@ -1,6 +1,6 @@
 import { sticker } from '../lib/sticker.js'
 let handler = async(m, { conn }) => {
-//if (!db.data.chats[m.chat].stickers && m.isGroup) throw `${ag}𝙇𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 𝘿𝙀 𝙎𝙏𝙄𝘾𝙆𝙀𝙍𝙎 𝙀𝙎𝙏𝘼𝙉 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝘿𝙊𝙎 𝙐𝙎𝙀 *#on stickers* 𝙋𝘼𝙍𝘼 𝘼𝘾𝙏𝙄𝙑𝘼𝙍`
+//if (!db.data.chats[m.chat].stickers && m.isGroup) throw `${ag}𝙇𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 𝘿𝙀 𝙎𝙏𝙄𝘾𝙆𝙀𝙍𝙎 𝙀𝙎𝙏𝘼𝙉 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝘿𝙊𝙎 𝙐𝙎𝙀 *#on stickers* 𝙋𝘼𝙍𝘼 𝘼𝘾𝙏𝙄𝙑𝘼`
 if (!db.data.chats[m.chat].stickers && m.isGroup) throw 0
 
 let nombre = '𝐄𝐥 𝐂𝐡𝐞𝐦𝐚 👹'
@@ -23,7 +23,7 @@ let stiker = await sticker(null, s[Math.floor(Math.random() * s.length)], nombre
 await delay(5 * 5000)
 conn.sendFile(m.chat, stiker, null, { asSticker: true })
 }
-handler.customPrefix = /animada|animado|alegré|alegre|feliz|felis|contento|contenta|gusto|alegría|alegrarse|alegremonos|emocionado|emocionada|😀|😃|😄|😁|😂|😛|👻/i 
+handler.customPrefix = /animada|animado|contento|contenta|alegría|alegrarse|alegremonos|emocionado|emocionada|feliz/i 
 handler.command = new RegExp
 handler.exp = 50
 export default handler
