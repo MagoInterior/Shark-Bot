@@ -5,7 +5,7 @@ import moment from 'moment-timezone'
 import fs from 'fs' 
 import { en, es, id, pt } from './lib/idiomas/total-idiomas.js' 
 
-//⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a | Add the numbers to be Owner ⋅.━━━━ ⊰  
+//⊱ ━━━━━.⋅ Añada los numeros a ser Propietario ⋅.━━━━ ⊰  
 global.owner = [
   ['50582783643', '𝐄𝐥 𝐂𝐡𝐞𝐦𝐚 👹', true],
   ['50576033859'],
@@ -13,15 +13,15 @@ global.owner = [
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 global.mods = [] 
-global.prems = ['50582783643'], 
+global.prems = ['50582783643'],
+   
   
-  
-//⊱ ━━━━━.⋅ IDIOMA : LENGUAJE ⋅.━━━━ ⊰ 
-//Agrega el Idioma que quieres que tenga el Shark-Bot
+//⊱ ━━━━━.⋅ IDIOMA ⋅.━━━━ ⊰ 
+//Agrega el Idioma que quieres que tenga el Shark-Bot 
 //  es = Español         id = Bahasa Indonesia
-//  en = English         pt = Português 
+//  en = English         pt = Português
 
-global.lenguajeGB = es  //Idioma del Shark, Ejemplo: es | en | pt...
+global.lenguajeGB = es  //Idioma del Shark-Bot, Ejemplo: es | en | pt...
 
 //━━━━━━━━━━━━━━━━━━━━
 
@@ -81,15 +81,9 @@ global.APIKeys = { // APIKey Here
   'https://anabotofc.herokuapp.com/': 'AnaBot'
 }
 
-global.imagen1 = fs.readFileSync('./Menu2.jpg')
+global.imagen1 = fs.readFileSync('./media/menus/Menu3.jpg')
 
 //⊱ ━━━━━.⋅ KEY ⋅.━━━━ ⊰
-
-global.Key360 = ['964f-0c75-7afc'] //keys ephoto360
-//global.beta = ['https://violetics.pw'] //keys ephoto360
-
-global.keysZens = ['fiktod', 'c2459db922', 'BF39D349845E', '675e34de8a', '37CC845916', '0b917b905e6f', '6fb0eff124']
-global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 
 //━━━━━━━━━━━━━━━━━━━━
 
@@ -99,13 +93,10 @@ global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 global.packname = '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈'
 global.author = '𝐄𝐥 𝐂𝐡𝐞𝐦𝐚 👹'
 
-//━━━━━━━━━━━━━━━━━━━━
-
-
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
-global.vs = '9.9.9 (Navidad) 🎄'
-global.version = vs
+global.vs = '9.9.9'
+global.vsSK = '9.9'
 
 global.sk = '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈'
 global.shark = sk
@@ -161,7 +152,7 @@ global.exito = eg
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
-//⊱ ━━━━━.⋅ Información | Information ⋅.━━━━ ⊰
+//⊱ ━━━━━.⋅ Información ⋅.━━━━ ⊰
 
 global.wm = '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈'
 global.igfg = '𝐄𝐥 𝐂𝐡𝐞𝐦𝐚 👹'
@@ -177,9 +168,14 @@ global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.pre
 
 //━━━━━━━━━━━━━━lolkeys━━━━━━━━━
 
-global.lolkeys = ['2e0da1f78d1721134b21816d', '902c3bc9d8c08b0dcf8f5373', '808693688ecc695293359089', '85faf717d0545d14074659ad']
-//global.lolkeysapi = lolkeys[Math.floor(lolkeys.length * Math.random())]
-global.lolkeysapi = ['85faf717d0545d14074659ad']
+global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
+// 'fiktod' 'BF39D349845E' '675e34de8a' '0b917b905e6f'
+global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
+global.keysxteammm = ['29d4b59a4aa687ca', '5LTV57azwaid7dXfz5fzJu', 'cb15ed422c71a2fb', '5bd33b276d41d6b4', 'HIRO', 'kurrxd09', 'ebb6251cc00f9c63']
+global.keysxteam = keysxteammm[Math.floor(keysxteammm.length * Math.random())]
+global.keysneoxrrr = ['5VC9rvNx', 'cfALv5']
+global.keysneoxr = keysneoxrrr[Math.floor(keysneoxrrr.length * Math.random())]
+global.lolkeysapi = ['BrunoSobrino']
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -255,54 +251,54 @@ global.fgif = {
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
-global.multiplier = 60 // Cuanto más alto, más difícil subir de nivel
+global.multiplier = 60 // Cuanto más alto, más difícil subir de nivel 
 
 //Emojis RPG - Referencias
 global.rpg = {
   emoticon(string) {
     string = string.toLowerCase()
     let emot = {
-      level: '🧬 Nivel : Level',
+      level: '🧬 Nivel',
       limit: lenguajeGB.eDiamante(),
       exp: lenguajeGB.eExp(),
-      bank: '🏦 Banco : Bank',
+      bank: '🏦 Banco',
       diamond: lenguajeGB.eDiamantePlus(),
-      health: '❤️ Salud : Health',
+      health: '❤️ Salud',
       kyubi: lenguajeGB.eMagia(),
       joincount: lenguajeGB.eToken(),
       emerald: lenguajeGB.eEsmeralda(),
       stamina: lenguajeGB.eEnergia(),
-      role: '💪 Rango | Role',
+      role: '💪 Rango',
       premium: '🎟️ Premium',
-      pointxp: '📧 Puntos Exp : Point Xp',
+      pointxp: '📧 Puntos Exp',
       gold: lenguajeGB.eOro(),
       
       trash: lenguajeGB.eBasura(),
-      crystal: '🔮 Cristal : Crystal',
-      intelligence: '🧠 Inteligencia : Intelligence',
+      crystal: '🔮 Cristal',
+      intelligence: '🧠 Inteligencia',
       string: lenguajeGB.eCuerda(),
-      keygold: '🔑 Llave de Oro : Key Gold',
-      keyiron: '🗝️ Llave de Hierro : Key Iron',
+      keygold: '🔑 Llave de Oro',
+      keyiron: '🗝️ Llave de Hierro',
       emas: lenguajeGB.ePinata(),
-      fishingrod: '🎣 Caña de Pescar : Fishing Rod',
+      fishingrod: '🎣 Caña de Pescar',
       gems: '🍀 Gemas : Gemas',
-      magicwand: '⚕️ Varita Mágica : Magic Wand',
-      mana: '🪄 Hechizo : Spell',
-      agility: '🤸‍♂️ Agilidad : Agility',
-      darkcrystal: '♠️ Cristal Oscuro : Dark Glass',
+      magicwand: '⚕️ Varita Mágica',
+      mana: '🪄 Hechizo',
+      agility: '🤸‍♂️ Agilidad',
+      darkcrystal: '♠️ Cristal Oscuro',
       iron: lenguajeGB.eHierro(),
       rock: lenguajeGB.eRoca(),
       potion: lenguajeGB.ePocion(),
       superior: '💼 Superior : Superior',
-      robo: '🚔 Robo : Robo',
-      upgrader: '🧰 Aumentar Mejora : Upgrade',
+      robo: '🚔 Robo',
+      upgrader: '🧰 Aumentar Mejora',
       wood: lenguajeGB.eMadera(),
       
-      strength: '🦹‍ ♀️ Fuerza : Strength',
+      strength: '🦹‍ ♀️ Fuerza',
       arc: '🏹 Arco : Arc',
-      armor: '🥼 Armadura : Armor',
-      bow: '🏹 Super Arco : Super Bow',
-      pickaxe: '⛏️ Pico : Peak',
+      armor: '🥼 Armadura',
+      bow: '🏹 Super Arco',
+      pickaxe: '⛏️ Pico',
       sword: lenguajeGB.eEspada(),
       
       common: lenguajeGB.eCComun(),
@@ -314,40 +310,40 @@ global.rpg = {
       
       bibitanggur: lenguajeGB.eSUva(), bibitapel: lenguajeGB.eSManzana(), bibitjeruk: lenguajeGB.eSNaranja(), bibitmangga: lenguajeGB.eSMango(), bibitpisang: lenguajeGB.eSPlatano(),
       
-      ayam: '🐓 Pollo : Chicken',
-      babi: '🐖 Puerco : Pig',
-      Jabali: '🐗 Jabalí : Wild Boar',
-      bull: '🐃 Toro : Bull',    
-      buaya: '🐊 Cocodrilo : Alligator',    
+      ayam: '🐓 Pollo',
+      babi: '🐖 Puerco',
+      Jabali: '🐗 Jabalí',
+      bull: '🐃 Toro',    
+      buaya: '🐊 Cocodrilo',    
       cat: lenguajeGB.eGato(),    
       centaur: lenguajeGB.eCentauro(),
-      chicken: '🐓 Pollo : Chicken',
-      cow: '🐄 Vaca : Cow', 
+      chicken: '🐓 Pollo',
+      cow: '🐄 Vaca', 
       dog: lenguajeGB.ePerro(),
       dragon: lenguajeGB.eDragon(),
-      elephant: '🐘 Elefante : Elephant',
+      elephant: '🐘 Elefante',
       fox: lenguajeGB.eZorro(),
-      giraffe: '🦒 Jirafa : Giraffe',
+      giraffe: '🦒 Jirafa',
       griffin: lenguajeGB.eAve(), //Mascota : Griffin',
       horse: lenguajeGB.eCaballo(),
-      kambing: '🐐 Cabra : Goat',
-      kerbau: '🐃 Búfalo : Buffalo',
-      lion: '🦁 León : Lion',
+      kambing: '🐐 Cabra',
+      kerbau: '🐃 Búfalo',
+      lion: '🦁 León',
       money: lenguajeGB.eSharkCoins(),
-      monyet: '🐒 Mono : Monkey',
+      monyet: '🐒 Mono',
       panda: '🐼 Panda',
-      snake: '🐍 Serpiente : Snake',
-      phonix: '🕊️ Fénix : Phoenix',
-      rhinoceros: '🦏 Rinoceronte : Rhinoceros',
+      snake: '🐍 Serpiente',
+      phonix: '🕊️ Fénix',
+      rhinoceros: '🦏 Rinoceronte',
       wolf: lenguajeGB.eLobo(),
-      tiger: '🐅 Tigre : Tiger',
-      cumi: '🦑 Calamar : Squid',
-      udang: '🦐 Camarón : Shrimp',
-      ikan: '🐟 Pez : Fish',
+      tiger: '🐅 Tigre',
+      cumi: '🦑 Calamar',
+      udang: '🦐 Camarón',
+      ikan: '🐟 Pez',
       
-      fideos: '🍝 Fideos : Noodles',
-      ramuan: '🧪 Ingrediente NOVA : Ingredients',
-      knife: '🔪 Cuchillo : Knife'
+      fideos: '🍝 Fideos',
+      ramuan: '🧪 Ingrediente NOVA',
+      knife: '🔪 Cuchillo'
     }
     let results = Object.keys(emot).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
     if (!results.length) return ''
