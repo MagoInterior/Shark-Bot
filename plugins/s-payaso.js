@@ -4,7 +4,7 @@ let handler = async(m, { conn }) => {
 if (!db.data.chats[m.chat].stickers && m.isGroup) throw 0
  
 let nombre = '𝐄𝐥 𝐂𝐡𝐞𝐦𝐚 👹'
-let nombre2 = '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈'
+let nombre2 = '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈' 
  
 const s = [
 'https://i.gifer.com/3OO52.gif'
@@ -12,7 +12,7 @@ const s = [
  
 let stiker = await sticker(null, s[Math.floor(Math.random() * s.length)], nombre, nombre2)
 await delay(5 * 5000)
-conn.sendFile(m.chat, stiker, null, { asSticker: true })
+if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: nn, thumbnail: imagen1}}}, { quoted: m })
 }
 handler.customPrefix = /payaso|🤡/i 
 handler.command = new RegExp

@@ -1,4 +1,3 @@
-
 //let handler = m => m
 //handler.all = async function (m) {
 let handler = m => m
@@ -63,3 +62,4 @@ seconds = (seconds < 10) ? "0" + seconds : seconds
 
 return minutes + " m y " + seconds + " s " 
 }
+ 
