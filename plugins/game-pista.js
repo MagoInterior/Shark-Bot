@@ -1,4 +1,4 @@
-/*let handler = async (m, { conn }) => {
+let handler = async (m, { conn }) => {
 conn.tebaklagu = conn.tebaklagu ? conn.tebaklagu : {}
 let id = m.chat
 if (!(id in conn.tebaklagu)) throw false
@@ -8,4 +8,4 @@ let nyanya = nya.replace(/[bcdfghjklmnñpqrstvwxyzBCDEFGHJKLMNÑPQRSTVWXYZ]/g, '
 m.reply('' + nyanya + '')
 }
 handler.command = /^hint|pista$/i
-export default handler*/
+export default handler

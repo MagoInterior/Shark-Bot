@@ -1,9 +1,39 @@
-let handler = m => m
+ let handler = m => m
 handler.all = async function (m) {
 let chat = global.db.data.chats[m.chat]
+let name = conn.getName(m.sender)
 
 if (/^e$/i.test(m.text) ) { //sem prefixo
-    conn.reply(m.chat, `Que bueno saber la letra E`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+    let teks = `
+${pickRandom([`Que bueno sabe la letra E`, `eeeeee`])}
+`.trim()
+conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
+
+}
+
+if (/^destruirbot|autodestruirbot$/i.test(m.text) ) { //sem prefixo
+    let teks = `
+${pickRandom([`Mi Creador me trata muy mal 😭`])}
+`.trim()
+conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
+
+}
+
+/*if (/^Mande porno|porno|paja$/i.test(m.text) ) { //sem prefixo
+    let teks = `
+${pickRandom([`no puedo esta contra las política del grupo.😪`, `_uff miren un pajero_`, `_pagame y paso mi pack😏😛_`, `_que_`, `_que quiere pija dice 🤣_`, `_pasa el pack de tu hermana😏_`, `_mire un gilipolla_`, `_siuuu sexo sexo sexo😈_`, '_callate putito_'])}
+`.trim()
+conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
+
+}*/
+
+if (/^reglas|normas|Reglas$/i.test(m.text) ) { //sem prefixo
+    conn.reply(m.chat, `╭┅〘 ⚠️ 𝗢𝗯𝗲𝗱𝗲𝗰𝗲 𝗹𝗮𝘀 𝗿𝗲𝗴𝗹𝗮𝘀 ⚠️ 〙*
+➽❌ 𝐏𝐫𝐨𝐡𝐢𝐛𝐢𝐝𝐨 𝐥𝐥𝐚𝐦𝐚𝐫 𝐚𝐥 𝐁𝐨𝐭
+➽❌ 𝐏𝐫𝐨𝐡𝐢𝐛𝐢𝐝𝐨 𝐒𝐩𝐚𝐦 𝐚𝐥 𝐁𝐨𝐭
+➽❌ 𝐍𝐨 𝐚𝐠𝐫𝐞𝐠𝐚𝐫 𝐚𝐥 𝐁𝐨𝐭
+➽❌ 𝐑𝐞𝐬𝐩𝐞𝐭𝐚 𝐥𝐨𝐬 𝐭𝐞𝐫𝐦𝐢𝐧𝐨𝐬 𝐲 𝐜𝐨𝐧𝐝𝐢𝐜𝐢𝐨𝐧𝐞𝐬
+*╰═┅ৡৢ͜͡✦═╡ 𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈 ╞═┅ৡৢ͜͡✦═╯*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
 
@@ -20,11 +50,15 @@ if (/^¿que es un bot?|Que es un bot$/i.test(m.text) ) { //sem prefixo
 ┆ 𝐧𝐨 𝐢𝐧𝐭𝐞𝐫𝐟𝐢𝐞𝐫𝐞 𝐞𝐧 𝐞𝐥 𝐩𝐫𝐨𝐜𝐞𝐬𝐨 
 ┆ 𝐏𝐚𝐫𝐚 𝐯𝐞𝐫 𝐞𝐥 𝐦𝐞𝐧𝐮́ 𝐝𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨𝐬 𝐩𝐮𝐞𝐝𝐞𝐬 𝐮𝐬𝐚𝐫 #menu
 ┆ 
-┆ 「 𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭 」
-╰━━━⊰ 👾 ${vs} ⊱━━━━დ*`, m) //wm, null, [['Menu', '#menu']], m)
+┆ 「 𝙎𝙃𝘼𝙍𝙆𝘽𝙊𝙏ㅤ🦈 」
+╰━━━⊰ 👾 ${vs} ⊱━━━━დ*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
+}  
+return !0 
+}
+export default handler
+
+function pickRandom(list) {
+    return list[Math.floor(Math.random() * list.length)]
 }
 
-   
-return !0 }
-export default handler

@@ -1,5 +1,3 @@
-//ESTOS DISEÑOS PARA MENSAJES SON COMPATIBLES CON EL SHARK-BOT, SIN EMBARGO ALGUNOS NO SE VEN EN LA VERSIÓN DE WHATSAPP WEB
-//PERO EN EL CELULAR SI SE NOTA TODOS, PUEDES USAR EL QUE QUIERAS
 import { generateWAMessageFromContent } from "@adiwajshing/baileys"
 import fs from 'fs'
 import fetch from 'node-fetch'
@@ -20,34 +18,35 @@ let shark = 'https://i.ibb.co/c63hMb6/shark.jpg'
 let pp = await conn.profilePictureUrl(who).catch(_ => shark)
 //pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './src/grupos.jpg' 
 
-global.enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support group' , sourceUrl: nna, thumbnail: await(await fetch(img)).buffer() }}}
+
+//global.enlace = { contextInfo: { externalAdReply: {title: wm, body: 'support group' , sourceUrl: nna, thumbnail: await(await fetch(img)).buffer() }}}
 //PARA ENLACE DE WHATSAPP	
 	
-global.enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: '𝗦𝘂𝗽𝗲𝗿 𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈', thumbnailUrl: await(await fetch(img)).buffer(), sourceUrl: yt }}}
+//global.enlace2 = { contextInfo: { externalAdReply: { showAdAttribution: true, mediaUrl: yt, mediaType: 'VIDEO', description: '', title: wm, body: '𝗦𝘂𝗽𝗲𝗿 𝙎𝙃𝘼𝙍𝙆𝘽𝙊𝙏', thumbnailUrl: await(await fetch(img)).buffer(), sourceUrl: yt }}}
 //PARA ENLACE DE YOUTUBE	
 	
-global.fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+//global.fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 //VERIFICADO MAS IMAGEN DEL USUARIO
 	
-global.fkontak2 = { key: { participant: '0@s.whatsapp.net' }, message: { contactMessage: { displayName: packname, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:XL;${author},;;;\nFN:${author},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), thumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), sendEphemeral: true }}}
+//global.fkontak2 = { key: { participant: '0@s.whatsapp.net' }, message: { contactMessage: { displayName: packname, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:XL;${author},;;;\nFN:${author},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, jpegThumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), thumbnail: fs.readFileSync('./media/menus/Menu1.jpg'), sendEphemeral: true }}}
 //CONTACTO CON MENSAJE PERSONALIZADO MAS FOTO DE USUARIO
 	
-global.ftroli = { key: { participant: '0@s.whatsapp.net' }, message: { orderMessage: { itemCount: fsizedoc, status: 1, surface: 1, message: botdate, orderTitle: author, sellerJid: '0@s.whatsapp.net' }}}
+//global.ftroli = { key: { participant: '0@s.whatsapp.net' }, message: { orderMessage: { itemCount: fsizedoc, status: 1, surface: 1, message: botdate, orderTitle: author, sellerJid: '0@s.whatsapp.net' }}}
+//MENSAJE CON TEXTO Y VERIFICADO
 
-	
-global.fvn = { key: { participant: '0@s.whatsapp.net' }, message: { audioMessage: { mimetype: 'audio/ogg; codecs=opus', seconds: fsizedoc, ptt: true }}}
+//global.fvn = { key: { participant: '0@s.whatsapp.net' }, message: { audioMessage: { mimetype: 'audio/ogg; codecs=opus', seconds: fsizedoc, ptt: true }}}
 //MENSAJE SIMULADOR DE AUDIO
 	
-global.fvn2 = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "50582783643-1625305606@g.us" } : {}) }, message: { "audioMessage": { "mimetype":"audio/ogg; codecs=opus", "seconds": "99569", "ptt": "true"   }}}  
+//global.fvn2 = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "50582783643-1625305606@g.us" } : {}) }, message: { "audioMessage": { "mimetype":"audio/ogg; codecs=opus", "seconds": "99569", "ptt": "true"   }}}  
 //SIMULADOR DE AUDIO ENVIADO 
 	
-global.twa = {key: {participant: "0@s.whatsapp.net", "remoteJid": "0@s.whatsapp.net"}, "message": {"groupInviteMessage": {"groupJid": "50582783643-1616969743@g.us", "inviteCode": "m", "groupName": "P", "caption": wm, 'jpegThumbnail': fs.readFileSync('./media/menus/Menu3.jpg')}}}
+//global.twa = {key: {participant: "0@s.whatsapp.net", "remoteJid": "0@s.whatsapp.net"}, "message": {"groupInviteMessage": {"groupJid": "50582783643-1616969743@g.us", "inviteCode": "m", "groupName": "P", "caption": wm, 'jpegThumbnail': fs.readFileSync('./media/menus/Menu3.jpg')}}}
 //TEXTO PERSONALIZADO CON NOTIFICACION DE FOTO
 	
-global.fdoc = {quoted:{key : {participant : '0@s.whatsapp.net'},message: {documentMessage: {title: wm}}}}
+//global.fdoc = {quoted:{key : {participant : '0@s.whatsapp.net'},message: {documentMessage: {title: wm}}}}
 //MENSAJE TIPO DOCUMENTO
 	
-global.frep = { contextInfo: { externalAdReply: {title: wm, body: author, sourceUrl: md, thumbnail: fs.readFileSync('./media/menus/Menu3.jpg')}}}
+//global.frep = { contextInfo: { externalAdReply: {title: wm, body: author, sourceUrl: md, thumbnail: fs.readFileSync('./media/menus/Menu3.jpg')}}}
 //MENSAJE CON TEXTO, IMAGEN Y ENLACE PERSONALIZADO	
 
 /*conn.fakeReply(m.chat, `*Prueba*`, '0@s.whatsapp.net', wm)*/ 
@@ -71,6 +70,13 @@ let fakes = { key: { participant: '0@s.whatsapp.net', remoteJid: 'status@broadca
 //LA FUNCIÓN DE fakes Y adReply CREA UN DINÁMICO DE DOBLE DISEÑO PARA sendButton Y sendButtonVid
 
 //conn.sendButtonVid(m.chat, vid, `*Texto1*`, wm, 'Boton', '.tomp3', 'Boton2', '.tomp3', 'Boton3', '.tomp3', fkontak, adReply)//, fakes, adReply)
+//MENSAJE CON VÍDEO, BOTONES Y DISEÑO 
+	
+//let btn = [{ urlButton: { displayText: 'A', url: md }}, 
+//{ quickReplyButton: { displayText: 'B', id: '#C' }}]
+//conn.sendButtonGif(m.chat, text1, text2, { url: link1 }, btn, link2)
+//MENSAJE SIMULADOR DE GIF CON BOTON DE ENLACE DE TEXTO Y BOTÓN DE COMANDO
+		
 }
 handler.command = /^(fake)$/i
 export default handler
